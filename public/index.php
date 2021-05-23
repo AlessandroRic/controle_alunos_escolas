@@ -3,12 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Infinite Loop - Bootstrap 4.0 HTML Template</title>
-    <link rel="stylesheet" href="assets/fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="assets/slick/slick.css">
-    <link rel="stylesheet" href="assets/slick/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/tooplate-infinite-loop.css" />
+    <title>Teste Estuda</title>
+    <link rel="stylesheet" href="Assets/fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/slick/slick.css">
+    <link rel="stylesheet" href="Assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Assets/css/tooplate-infinite-loop.css" />
 </head>
 <body>
 <!-- Hero section -->
@@ -84,9 +84,9 @@
             <div class="col-lg-1">
                 <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 my-auto">
                 <div class="tm-intro-text-container">
-
+                    <a href="criar-aluno.php"><h2>Adicionar Estudantes</h2></a>
                 </div>
             </div>
 
@@ -122,7 +122,7 @@
             </div>
             <div class="col-lg-5">
                 <div class="tm-intro-text-container">
-
+                    <a href="criar-turma.php"><h2>Adicionar Turmas</h2></a>
                 </div>
             </div>
 
@@ -158,7 +158,7 @@
             </div>
             <div class="col-lg-5">
                 <div class="tm-intro-text-container">
-
+                    <a href="criar-escola.php"><h2>Adicionar Escolas</h2></a>
                 </div>
             </div>
 
@@ -167,11 +167,11 @@
 
 </section>
 
-<script src="assets/js/jquery-1.9.1.min.js"></script>
-<script src="assets/slick/slick.min.js"></script>
-<script src="assets/js/easing.min.js"></script>
-<script src="assets/js/jquery.singlePageNav.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="Assets/js/jquery-1.9.1.min.js"></script>
+<script src="Assets/slick/slick.min.js"></script>
+<script src="Assets/js/easing.min.js"></script>
+<script src="Assets/js/jquery.singlePageNav.min.js"></script>
+<script src="Assets/js/bootstrap.min.js"></script>
 <script>
 
     function getOffSet(){
@@ -286,18 +286,3 @@
 </script>
 </body>
 </html>
-
-
-<?php
-
-//Teste de conexao ao banco de dados Docker
-$pdo = null;
-
-try {
-    $pdo = new PDO('mysql:host=mysql;dbname=database', 'user', '12345678');
-} catch (PDOException $e) {
-    print $e->getMessage();
-    die();
-}
-
-var_dump($pdo);

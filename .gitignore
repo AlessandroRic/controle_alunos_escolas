@@ -1,6 +1,6 @@
-
-composer.json
 .idea/vcs.xml
 .idea/php.xml
 .idea/modules.xml
 .idea/controle_alunos_escolas.iml
+/vendor
+composer.lock

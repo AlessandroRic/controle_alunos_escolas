@@ -495,6 +495,7 @@ p {
 
 @media (min-width: 768px) {
   .tm-intro-text-container {
+    text-align: center;
     padding-left: 0px;
   }
 
@@ -523,6 +524,7 @@ p {
     padding-left: 15px;
     padding-top: 30px;
     max-width: 600px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
