@@ -1,16 +1,5 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Teste Estuda</title>
-    <link rel="stylesheet" href="Assets/fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="Assets/slick/slick.css">
-    <link rel="stylesheet" href="Assets/slick/slick-theme.css">
-    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="Assets/css/tooplate-infinite-loop.css" />
-</head>
-<body>
+<?php include "Layouts/headerhtml.php" ?>
+
 <!-- Hero section -->
 <section id="infinite" class="text-white tm-font-big tm-parallax">
     <!-- Navigation -->
@@ -215,27 +204,6 @@
         }
     };
 
-    var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-
-        $(window).scroll(function(){
-            if($(window).width() > 768) {
-                var firstTop = $object.offset().top,
-                    pos = $(window).scrollTop(),
-                    yPos = Math.round((multiplier * (firstTop - pos)) - 186);
-
-                var bg_css = 'center ' + yPos + 'px';
-
-                $object.css({"background-position" : bg_css });
-            } else {
-                $object.css({"background-position" : "center" });
-            }
-        });
-    };
-
     $(function(){
         // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.30, false);
@@ -246,42 +214,6 @@
         window.addEventListener('resize', function(){
             background_image_parallax($(".tm-parallax"), 0.30, true);
         }, true);
-
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){
-            if($(document).scrollTop() > 120) {
-                $('.tm-navbar').addClass("scroll");
-            } else {
-                $('.tm-navbar').removeClass("scroll");
-            }
-        });
-
-        // Close mobile menu after click
-        $('#tmNav a').on('click', function(){
-            $('.navbar-collapse').removeClass('show');
-        })
-
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-            'easing': 'easeInOutExpo',
-            'speed': 600
-        });
-
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 600, 'easeInOutExpo', function(){
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-
     });
 </script>
 </body>
