@@ -12,7 +12,7 @@ $params = [
     'dbname' => 'database',
     'user'   => 'user',
     'password' => '12345678',
-    'host' => 'localhost:3307',
+    'host' => 'mysql',
     'driver' => 'pdo_mysql'
 ];
 

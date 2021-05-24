@@ -89,9 +89,9 @@ class Aluno {
         return $this->data_nascimento;
     }
 
-    public function setDataNascimento(string $data_nascimento)
+    public function setDataNascimento($data_nascimento)
     {
-        $this->data_nascimento = date('Y-m-d',strtotime($data_nascimento));
+        $this->data_nascimento = $data_nascimento;
     }
 
     public function getGenero()

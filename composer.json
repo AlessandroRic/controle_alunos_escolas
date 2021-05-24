@@ -12,6 +12,7 @@
     },
     "require": {
         "php": "^7.4",
+        "ext-http": "*",
         "guzzlehttp/guzzle": "^7.3",
         "doctrine/orm": "^2.6.2",
         "doctrine/migrations": "^2.0"

@@ -51,8 +51,39 @@
 
         <div class="row tm-content-box">
             <div class="col-lg-12">
-                <form action="" method="post">
-                    Formulario aqui
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Nome</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Nome Completo do Estabelecimento">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Endereço</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Endereço">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Data</label>
+                        <div class="col-sm-4">
+                            <input type="date" class="form-control" placeholder="Data" required>
+                        </div>
+                        <label class="col-sm-2 col-form-label">Situação</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" required>
+                                <option selected disabled>Escolher</option>
+                                <option value="1">Ativo</option>
+                                <option value="2">Inativo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
 

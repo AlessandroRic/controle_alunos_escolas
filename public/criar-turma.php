@@ -51,8 +51,43 @@
 
         <div class="row tm-content-box">
             <div class="col-lg-12">
-                <form action="" method="post">
-                    Formulario aqui
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Ano</label>
+                        <div class="col-sm-4">
+                            <input type="number" class="form-control" placeholder="Ano" min="2010" max="2021" maxlength="4">
+                        </div>
+                        <label class="col-sm-2 col-form-label">Nível</label>
+                        <div class="col-sm-4">
+                            <select class="form-control">
+                                <option selected disabled>Escolher</option>
+                                <option value="1">Fundamental</option>
+                                <option value="2">Médio</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Série</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" placeholder="Série">
+                        </div>
+                        <label class="col-sm-2 col-form-label">Turno</label>
+                        <div class="col-sm-4">
+                            <select class="form-control">
+                                <option selected disabled>Escolher</option>
+                                <option value="1">Matutino</option>
+                                <option value="2">Vespertino</option>
+                                <option value="3">Noturno</option>
+                                <option value="4">Integral</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
 

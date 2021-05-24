@@ -51,8 +51,44 @@
 
         <div class="row tm-content-box">
             <div class="col-lg-12">
-                <form action="" method="post">
-                    Formulario aqui
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Nome</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Nome Completo" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <label class="col-sm-2 col-form-label">Telefone</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" placeholder="Telefone de contato">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Data de Nascimento</label>
+                        <div class="col-sm-4">
+                            <input type="date" class="form-control" placeholder="Data de Nascimento" required>
+                        </div>
+                        <label class="col-sm-2 col-form-label">Genero</label>
+                        <div class="col-sm-4">
+                            <select class="form-control">
+                                <option selected disabled>Escolher</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Feminino</option>
+                                <option value="3">Não desejo indicar</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
 

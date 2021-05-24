@@ -17,6 +17,6 @@ ___
 1. Faça o clone do repositório com `git clone https://github.com/AlessandroRic/controle_alunos_escolas.git`
 2. Utilize o comando `docker-compose build` para realizar o pull das imagens.
 3. Acesse da pasta do repositório e execute o comando `composer install`.
-4. Na pasta do repositório após o passo 3 e execute o comando `vendor/bin/doctrine-migrations migrate`.
+4. Na pasta do repositório após o passo 3 e execute o comando `vendor/bin/doctrine-migrations migrate -q`.
 5. Acesse no navegador da sua preferência o endereço `http://localhost:8080`
 ___
